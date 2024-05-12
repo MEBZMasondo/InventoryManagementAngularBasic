@@ -47,7 +47,7 @@
 
     <div class="footer">
         <div name="buttonGroup" aria-label="Button group">
-            <button mat-raised-button color="primary" style="width: 200px; margin-right: 10px; margin-bottom: 5px;">Add Product</button>
+            <button mat-raised-button color="primary" (click)="openAddProductDialog()" style="width: 200px; margin-right: 10px; margin-bottom: 5px;">Add Product</button>
             <button mat-raised-button color="primary" style="width: 200px; margin-right: 10px;">Update Product</button>
             <button mat-raised-button color="primary" style="width: 200px; margin-right: 10px; margin-bottom: 5px;">Update Stock Quantity</button>
             <br>
@@ -60,30 +60,3 @@
 
   </div>
   
-
-
-<!-- Simpler Table -->
-<!-- <div class="main" >
-    <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Purchase Price</th>
-            <th>Selling Price</th>
-            <th>Quantity</th>
-            <th>Active</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let product of products">
-            <td>{{ product.productName }}</td>
-            <td>{{ product.productDescription }}</td>
-            <td>{{ product.productPurchasePrice }}</td>
-            <td>{{ product.productSellingPrice }}</td>
-            <td>{{ product.productQuantity }}</td>
-            <td>{{ product.productActive == 1 ? 'Active' : 'Inactive' }}</td>
-          </tr>
-        </tbody>
-      </table>   
-</div> -->

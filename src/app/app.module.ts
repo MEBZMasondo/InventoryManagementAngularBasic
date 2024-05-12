@@ -15,13 +15,16 @@ import {MatButtonModule} from '@angular/material/button';
 import { HttpClientModule } from '@angular/common/http';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import {MatTableModule} from '@angular/material/table'; 
+import {MatDialogModule} from '@angular/material/dialog';
+import { ProductAddComponent } from './components/product-add/product-add.component'; 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     DashboardComponent,
-    MainComponentComponent
+    MainComponentComponent,
+    ProductAddComponent
   ],
   imports: [
     BrowserModule,
@@ -36,10 +39,12 @@ import {MatTableModule} from '@angular/material/table';
     MatFormFieldModule,
     MatPaginatorModule,
     MatTableModule,
+    MatDialogModule,
 
     HttpClientModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [ProductAddComponent]  // All the dialog components
 })
 export class AppModule { }
