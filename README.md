@@ -16,6 +16,12 @@
 node_modules
 
 ```
+
+# SCREEN CASTS
+
+![login screen cast](src/assets/media/login.png)
+
+
 ## ADD A USER DIRECT TO DB
 
 ```sql
