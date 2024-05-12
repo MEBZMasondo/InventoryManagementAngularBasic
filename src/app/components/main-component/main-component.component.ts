@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { ProductService } from 'src/app/services/product.service';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
-import { MatDialog } from '@angular/material/dialog';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { MatDialogConfig } from '@angular/material/dialog';
 import { ProductAddComponent } from '../product-add/product-add.component';
 
@@ -19,6 +19,7 @@ export class MainComponentComponent implements OnInit {
 
   @ViewChild(MatPaginator, {static: true}) paginator!: MatPaginator;
 
+  
   constructor(private productService: ProductService, public dialog: MatDialog) { }
 
   ngOnInit(): void {
@@ -43,7 +44,7 @@ export class MainComponentComponent implements OnInit {
   openAddProductDialog() {
     this.dialog.open(ProductAddComponent, {
       width: '500px',
-      height: '500px',
+      height: '70%',
       hasBackdrop: true, 
       disableClose: true,
 
@@ -62,5 +63,5 @@ export class MainComponentComponent implements OnInit {
 }
 
 
-  
+
 }

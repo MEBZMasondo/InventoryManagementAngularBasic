@@ -17,6 +17,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import {MatTableModule} from '@angular/material/table'; 
 import {MatDialogModule} from '@angular/material/dialog';
 import { ProductAddComponent } from './components/product-add/product-add.component'; 
+import {MatSelectModule} from '@angular/material/select'; 
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { ProductAddComponent } from './components/product-add/product-add.compon
     MatPaginatorModule,
     MatTableModule,
     MatDialogModule,
+    MatSelectModule,
 
     HttpClientModule
   ],

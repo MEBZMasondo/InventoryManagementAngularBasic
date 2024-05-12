@@ -5,9 +5,40 @@
     <mat-dialog-content [formGroup]="addform">
       
         <mat-form-field>
-            <input matInput placeholder="Course Description">
+            <mat-label>product Name</mat-label>
+            <input matInput placeholder="">
         </mat-form-field>
+        <br>
+        <mat-form-field>
+            <mat-label>product Description</mat-label>
+            <input matInput placeholder="">
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <mat-label>product Purchase Price</mat-label>
+            <input matInput placeholder="">
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <mat-label>product Selling Price</mat-label>
+            <input matInput placeholder="">
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <mat-label>product Quantity</mat-label>
+            <input matInput placeholder="">
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <mat-label>Product Active</mat-label>
+            <mat-select>
+              <mat-option value="0">0</mat-option>
+              <mat-option value="1">1</mat-option>
+            </mat-select>
+        </mat-form-field> 
       
+          
+  
     </mat-dialog-content>
     
     <mat-dialog-actions>
