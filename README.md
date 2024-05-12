@@ -16,6 +16,20 @@
 node_modules
 
 ```
+## ADD A USER DIRECT TO DB
+
+```sql
+
+INSERT INTO `LoginDB`.`user` (`name`, `password`, `username`) 
+VALUES ('Johhny Cage', 'johncage', 'password123');
+
+```
+
+```
+"username": "johncage",
+"password": "password123"
+
+```
 
 # ATTRIBUTIONS 
 - login page ptcture free from : https://www.freepik.com
